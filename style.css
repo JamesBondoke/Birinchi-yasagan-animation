@@ -1,0 +1,56 @@
+.parent{
+
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ height: 100vh;
+ background-image: url(https://www.technistone.com/color-range/image-slab/Starlight%20Black_SLAB_web.jpg);
+
+}
+.child{
+ margin: 35px;
+ 
+
+
+}
+h1{
+ border: 5px solid green;
+ width: 100px;
+}
+
+img{
+ width: 400px;
+
+}
+.child{
+ height: 400px;
+ width: 400px;
+ background-repeat: no-repeat;
+ background: red;
+ animation: z 10s infinite;
+ transform: skew(50deg);
+ transform: rotate(45deg);
+}
+@keyframes z {
+ 0%{
+  background: red;
+  transform: scale(0px);
+  border-radius: 0%;
+ }
+ 25%{
+  background: green;
+  transform: scale(1.5);
+  border-radius: 50%;
+ }
+ 50%{
+  background: white;
+  transform: scale(1.75);
+  border-radius: 50%;
+ }
+ 100%{
+  background: red;
+  transform: scale(0px);
+  border-radius: 0%;
+ }
+
+}
